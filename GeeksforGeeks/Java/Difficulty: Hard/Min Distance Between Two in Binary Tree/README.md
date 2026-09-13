@@ -1,0 +1,10 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1">Min Distance Between Two in Binary Tree</a></h2><h3>Difficulty Level : Difficulty: Hard</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 18px;">Given a binary tree with <strong>n </strong>nodes and two node values <strong>a </strong>and <strong>b</strong>, find the minimum distance between them. The distance is defined as the minimum number of edges between the two nodes. It is guaranteed that both nodes exist in the binary tree and all node values are unique.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples :</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:</strong><br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/927807/Web/Other/blobid0_1777983117.png" height="100"><strong>&nbsp;     </strong>
+a = 2, b = 3
+<strong>Output: </strong>2<strong>
+Explanation: </strong>The path between node 2 and node 3 is: </span><span style="font-size: 14pt;">2 -&gt; 1 -&gt; 3.The number of edges in this path is 2, so the minimum distance is 2. </span></pre>
+<pre><span style="font-size: 18px;"><strong>Input:</strong><strong><br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/927807/Web/Other/blobid2_1777983160.png" width="208" height="144"></strong>
+a = 4, b = 7
+<strong>Output: </strong>4<strong>
+Explanation: </strong></span><span style="font-size: 18px;">The path between node 4 and node 7 is: 4 -&gt; 2 -&gt; 1 -&gt; 3 -&gt; 7.The number of edges in this path is 4, so the minimum distance is 4.</span></pre></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<code>Samsung</code>&nbsp;<code>MakeMyTrip</code>&nbsp;<code>Ola Cabs</code>&nbsp;<code>Linkedin</code>&nbsp;<code>Qualcomm</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Tree</code>&nbsp;
