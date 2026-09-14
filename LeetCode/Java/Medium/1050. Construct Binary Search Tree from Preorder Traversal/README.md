@@ -8,8 +8,8 @@
 Array, Stack, Tree, Binary Search Tree, Monotonic Stack, Binary Tree
 
 ### 🚀 Performance
-- **Runtime:** 4 ms
-- **Memory:** 43.7 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
