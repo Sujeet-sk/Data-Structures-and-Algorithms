@@ -14,21 +14,19 @@
  * }
  */
 class Solution {
-    void attach(TreeNode root, int val){
-        TreeNode temp=root;
-        if(temp.val<val){
-            if(temp.right==null) temp.right=new TreeNode(val);
-            else attach(temp.right,val);
+    public void insert(TreeNode root,int val){
+        if(root.val>val){
+            if(root.left==null) root.left=new TreeNode(val);
+            else insert(root.left,val);
         }
-        else{                    //temp.val>val
-            if(temp.left==null) temp.left=new TreeNode(val);
-            else attach(temp.left,val);
+        else{
+            if(root.right==null) root.right=new TreeNode(val);
+            else insert(root.right,val);
         }
     }
-    
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if(root==null) return new TreeNode(val);
-        attach(root,val);
+        insert(root,val);
         return root;
     }
 }
