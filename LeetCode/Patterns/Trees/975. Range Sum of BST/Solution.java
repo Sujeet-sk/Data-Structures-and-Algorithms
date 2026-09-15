@@ -15,10 +15,10 @@
  */
 class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
-        TreeNode temp=root;
-        if(temp==null) return 0;
-        if(temp.val<low) return rangeSumBST(temp.right,low,high);
-        else if(temp.val>high) return rangeSumBST(temp.left,low,high);
-        else return temp.val + rangeSumBST(temp.left,low,high) + rangeSumBST(temp.right,low,high);
+
+        if(root==null) return 0;
+        if(root.val<low) return rangeSumBST(root.right,low,high);
+        else if(root.val>high) return rangeSumBST(root.left,low,high);
+        else return root.val+rangeSumBST(root.right,low,high)+rangeSumBST(root.left,low,high);
     }
 }
