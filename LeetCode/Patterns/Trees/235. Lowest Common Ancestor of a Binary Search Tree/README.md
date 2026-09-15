@@ -1,6 +1,6 @@
 # 📝 235. Lowest Common Ancestor of a Binary Search Tree (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+🔗 [Problem Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Tree, Depth-First Search, Binary Search Tree, Binary Tree, Binary Lifting, Lowest Common Ancestor
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 6 ms
+- **Memory:** 47.6 MB
 
 ---
 
