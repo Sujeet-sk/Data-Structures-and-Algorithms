@@ -15,12 +15,13 @@
  */
 class Solution {
     int sum=0;
-    void reverseInorder(TreeNode root){
+    public void reverseInorder(TreeNode root){
         if(root==null) return;
         reverseInorder(root.right);
         sum+=root.val;
         root.val=sum;
         reverseInorder(root.left);
+
     }
     public TreeNode convertBST(TreeNode root) {
         reverseInorder(root);
