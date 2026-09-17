@@ -9,7 +9,7 @@ Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree
 
 ### 🚀 Performance
 - **Runtime:** 0 ms
-- **Memory:** 45.1 MB
+- **Memory:** 44.9 MB
 
 ---
 
