@@ -18,14 +18,15 @@ class Solution {
         if(root==null) return null;
         if(root.val>key) root.left=deleteNode(root.left,key);
         else if(root.val<key) root.right=deleteNode(root.right,key);
-        else{   //root.val==key
-            //0 child Node
+        else{
+            //for 0-child Node
             if(root.left==null && root.right==null) return null;
 
-            //1 child Node
+            //for 1-child Node
             if(root.left==null) return root.right;
-            if(root.right==null) return root.left;
-            //2 child Node
+            if(root.right==null) return root.left; 
+
+            //for 2-child Node
             else{
                 TreeNode pred=root.left;
                 while(pred.right!=null) pred=pred.right;
@@ -34,6 +35,7 @@ class Solution {
                 pred.right=root.right;
                 return pred;
             }
+
         }
         return root;
     }
