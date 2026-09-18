@@ -8,8 +8,8 @@
 Array, Hash Table, Math, Counting, Number Theory, Euclidean Algorithm, Greatest Common Divisor
 
 ### 🚀 Performance
-- **Runtime:** 317 ms
-- **Memory:** 81.1 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
