@@ -1,0 +1,6 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/count-number-of-equal-pairs-in-a-string0520/1">Count Equal Pairs in String</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 18px;">Given a string <strong>s</strong>, count the number of pairs of indices [i, j] such that s[i] is equal to s[j]. Note that [i, j] and [j, i] are counted as different pairs, and pairs where i == j are also valid and counted.</span></p><p><span style="font-size: 18px;"><strong>Note:</strong> s contains only lowercase English characters.</span></p><p><span style="font-size: 18px;"><strong>Examples:</strong></span></p><pre><span style="font-size: 18px;"><strong>Input: </strong>s = "air"<strong>
+Output: </strong>3<strong>
+Explanation: </strong>The only equal pairs are [0, 0], [1, 1], and [2, 2], since all characters are distinct.</span></pre><pre><span style="font-size: 18px;"><strong>Input: </strong>s = "aa"<strong>
+Output: </strong>4<strong>
+Explanation:</strong> The equal pairs are [0, 0], [0, 1], [1, 0], and [1, 1].</span>
+</pre></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Strings</code>&nbsp;
