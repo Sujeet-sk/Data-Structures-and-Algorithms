@@ -1,11 +1,23 @@
 class Solution {
-    public long countPairs(int[] arr, int k) {
-        int pairs=0;
-        for(int i=0;i<arr.length-1;i++){
-            for(int j=i+1;j<arr.length;j++){
-                if((arr[i]*arr[j])%k==0) pairs++;
-            }
+    public int gcd(int a,int b){
+        while(b!=0){
+            int temp=b;
+            b=a%b;
+            a=temp;
         }
-        return pairs;
+        return a;
     }
+    public long countPairs(int[] arr, int k) {
+        HashMap<Integer,Integer>map=new HashMap<>();
+        long count=0;
+        for(int num:arr){
+            int g=gcd(num,k);
+            for(int ele:map.keySet()){
+                if(((long)g*ele)%k==0) count+=map.get(ele);
+            }
+            map.put(g,map.getOrDefault(g,0)+1);
+        }
+        return count;
+    }
+    
 }
