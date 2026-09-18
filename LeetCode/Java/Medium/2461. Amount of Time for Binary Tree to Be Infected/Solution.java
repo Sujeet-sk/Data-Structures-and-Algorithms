@@ -1,61 +1,41 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+class Pair{
+    TreeNode node;
+    int level;
+
+    Pair(TreeNode node,int level){
+        this.node=node;
+        this.level=level;
+    }
+}
 class Solution {
+    TreeNode target;
+    public void bfs(TreeNode root,HashMap<TreeNode,TreeNode>map,int start){
+        if(root==null) return;
+        if(root.val==start) target=root;
+        if(root.left!=null) map.put(root.left,root);
+        if(root.right!=null) map.put(root.right,root);
+        bfs(root.left,map,start);
+        bfs(root.right,map,start);
+    }
     public int amountOfTime(TreeNode root, int start) {
-        TreeNode target=null;
-        HashMap<TreeNode,TreeNode>parent=new HashMap<>();
-        Queue<TreeNode>q=new LinkedList<>();
-        q.add(root);
-        while(!q.isEmpty()){                    //first BFS
-            TreeNode node=q.poll();
-            if(node.val==start) target=node;
-            if(node.left!=null){
-                parent.put(node.left,node);
-                q.add(node.left);
-            }
-            if(node.right!=null){
-                parent.put(node.right,node);
-                q.add(node.right);
-            }
+        target=null;
+        int min=0;
+        HashMap<TreeNode,TreeNode>map=new HashMap<>();
+        bfs(root,map,start);
+        HashSet<TreeNode>set=new HashSet<>();
+        Queue<Pair>q=new LinkedList<>();
+        q.add(new Pair(target,0));
+        while(!q.isEmpty()){
+            Pair front=q.remove();
+            TreeNode node=front.node;
+            int level=front.level;
+            min=Math.max(min,level);
+            set.add(node);
+            if(node.left!=null && !set.contains(node.left)) q.add(new Pair(node.left,level+1));
+            if(node.right!=null && !set.contains(node.right)) q.add(new Pair(node.right,level+1));
+            if(map.containsKey(node) && !set.contains(map.get(node))) q.add(new Pair(map.get(node),level+1));
         }
 
-        int min=0;
-        HashSet<TreeNode>visited=new HashSet<>();                
-        q.add(target);                                         //second bfs
-        visited.add(target);
-        while(!q.isEmpty()){
-            int size=q.size();
-            for(int i=0;i<size;i++){
-                TreeNode node=q.poll();
-                TreeNode par=parent.get(node);
-                if(node.left!=null && !visited.contains(node.left)){
-                    visited.add(node.left);
-                    q.add(node.left);
-                }
-                if(node.right!=null && !visited.contains(node.right)){
-                    visited.add(node.right);
-                    q.add(node.right);
-                }
-                if(par!=null && !visited.contains(par)){
-                    visited.add(par);
-                    q.add(par);
-                }
-            }
-            if(!q.isEmpty()) min++;
-        }
         return min;
     }
 }
