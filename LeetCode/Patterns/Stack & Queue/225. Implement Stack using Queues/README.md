@@ -8,8 +8,8 @@
 Stack, Design, Queue
 
 ### 🚀 Performance
-- **Runtime:** 2 ms
-- **Memory:** 43 MB
+- **Runtime:** 1 ms
+- **Memory:** 42.6 MB
 
 ---
 
