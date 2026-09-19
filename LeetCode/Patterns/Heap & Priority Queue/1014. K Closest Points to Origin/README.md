@@ -8,8 +8,8 @@
 Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect, K-D Tree
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 30 ms
+- **Memory:** 59.6 MB
 
 ---
 
