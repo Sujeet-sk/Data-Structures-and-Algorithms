@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 15 / 150 (10.0%)
+- **Completed:** 16 / 150 (10.7%)
 
 ---
 
@@ -91,7 +91,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 ### 📂 Heap / Priority Queue
 - [ ] Kth Largest Element in a Stream
 - [ ] Last Stone Weight
-- [ ] K Closest Points to Origin
+- [x] [K Closest Points to Origin](./Java/Medium/1014. K Closest Points to Origin/)
 - [x] [Kth Largest Element in an Array](./Java/Medium/215. Kth Largest Element in an Array/)
 - [ ] Task Scheduler
 - [ ] Design Twitter
