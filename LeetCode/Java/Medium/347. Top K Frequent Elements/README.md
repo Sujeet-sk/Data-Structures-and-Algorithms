@@ -8,8 +8,8 @@
 Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect
 
 ### 🚀 Performance
-- **Runtime:** 16 ms
-- **Memory:** 47.7 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
