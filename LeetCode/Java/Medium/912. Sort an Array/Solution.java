@@ -1,12 +1,5 @@
 class Solution {
-    public void quickSort(int[] nums,int low,int high){
-        if(low<high){
-            int pivot_idx=partition(nums,low,high);
-            quickSort(nums,low,pivot_idx-1);
-            quickSort(nums,pivot_idx+1,high);
-        }
 
-    }
     public int partition(int[] nums,int low,int high){
         int pivot=nums[high];
         int idx=low;
