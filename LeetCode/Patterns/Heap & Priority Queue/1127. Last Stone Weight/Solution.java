@@ -7,7 +7,6 @@ class Solution {
             int y=pq.remove();
             if(x!=y) pq.add(x-y);
         }
-        if(pq.size()==0) return 0;
-        return pq.peek();
+        return pq.poll();
     }
 }
