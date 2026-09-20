@@ -1,24 +1,26 @@
 class Solution {
-    public int hours(int[] piles,int mid){
-        int k=0;
+    public long hours(int[] piles,int mid){
+        long k=0;
         for(int ele:piles){
-            if(mid>=ele) k++;
+            if(ele%mid==0) k+=ele/mid;   
             else k+=(ele/mid)+1;
         }
         return k;
     }
+
     public int minEatingSpeed(int[] piles, int h) {
         int max=Integer.MIN_VALUE;
         for(int ele:piles) max=Math.max(max,ele);
-        int lo=1, hi=max, speed=max;
-        while(lo<=hi){
-            int mid=lo+(hi-lo)/2;
-            if(hours(piles,mid)<=h){
-                speed=mid;
-                hi=mid-1;
+        int i=1,j=max,ans=-1;
+        while(i<=j){
+            int mid=i+(j-i)/2;
+            long speed=hours(piles,mid);
+            if(speed<=h){
+                j=mid-1;
+                ans=mid;
             }
-            else lo=mid+1;
+            else i=mid+1;
         }
-        return speed;
+        return ans;
     }
 }
