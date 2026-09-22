@@ -50,7 +50,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [ ] Remove Nth Node From End of List
 - [ ] Intersection of Two Linked Lists
 - [ ] Add Two Numbers
-- [x] [Copy List with Random Pointer](./Java/Medium/138. Copy List with Random Pointer/)
+- [x] [Copy List with Random Pointer](./Java/Uncategorized/Copy List with Random Pointer/)
 - [ ] LRU Cache
 - [ ] Sort List
 - [ ] Merge k Sorted Lists

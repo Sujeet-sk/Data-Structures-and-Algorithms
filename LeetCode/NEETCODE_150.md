@@ -58,7 +58,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Merge Two Sorted Lists
 - [ ] Reorder List
 - [ ] Remove Nth Node From End of List
-- [x] [Copy List with Random Pointer](./Java/Medium/138. Copy List with Random Pointer/)
+- [x] [Copy List with Random Pointer](./Java/Uncategorized/Copy List with Random Pointer/)
 - [ ] Add Two Numbers
 - [ ] Linked List Cycle
 - [ ] Find the Duplicate Number
