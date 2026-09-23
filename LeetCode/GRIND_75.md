@@ -3,7 +3,7 @@
 Track your progress on the Grind 75 coding interview preparation list.
 
 ## Progress
-- **Completed:** 29 / 75 (38.7%)
+- **Completed:** 30 / 75 (40.0%)
 
 ---
 
@@ -35,7 +35,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 - [x] [Longest Common Subsequence](./Java/Medium/1250. Longest Common Subsequence/)
 - [ ] Word Break
 - [ ] Combination Sum
-- [ ] House Robber
+- [x] [House Robber](./Java/Medium/198. House Robber/)
 - [x] [House Robber II](./Java/Medium/213. House Robber II/)
 - [ ] Decode Ways
 - [x] [Unique Paths](./Java/Medium/62. Unique Paths/)
