@@ -8,8 +8,8 @@
 Math, Dynamic Programming, Recursion, Memoization
 
 ### 🚀 Performance
-- **Runtime:** 58 ms
-- **Memory:** 41.9 MB
+- **Runtime:** 10 ms
+- **Memory:** 42.3 MB
 
 ---
 
