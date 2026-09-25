@@ -7,6 +7,7 @@ class Solution {
         return dp[i]=Math.max(pick,skip);
     }
     public int rob(int[] nums) {
+        if(nums.length==1) return nums[0];
         int[] dp=new int[nums.length];
         int n=nums.length;
         Arrays.fill(dp,-1);
