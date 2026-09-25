@@ -13,7 +13,7 @@ class Solution {
         Arrays.fill(dp,-1);
         int first=maxAmount(0,n-2,nums,dp);
         Arrays.fill(dp,-1);
-        int second=maxAmount(1,n-1,nums,dp);
-        return Math.max(first,second);
+        int last=maxAmount(1,n-1,nums,dp);
+        return Math.max(first,last);
     }
 }
