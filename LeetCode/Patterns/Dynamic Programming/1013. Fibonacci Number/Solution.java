@@ -7,6 +7,6 @@ class Solution {
             dp[1]=dp[2];
             dp[0]=dp[1];
         }
-        return dp[n];
+        return dp[2];
     }
 }
