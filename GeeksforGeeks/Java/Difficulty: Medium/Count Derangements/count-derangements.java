@@ -12,4 +12,4 @@ class Solution {
         Arrays.fill(dp,-1);
         return count(n,dp);
     }
-};
+}
