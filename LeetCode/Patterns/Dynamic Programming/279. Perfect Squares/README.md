@@ -8,8 +8,8 @@
 Math, Dynamic Programming, Breadth-First Search, Knapsack Problem, Complete Knapsack
 
 ### 🚀 Performance
-- **Runtime:** 191 ms
-- **Memory:** 44.7 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
