@@ -7,8 +7,8 @@ class Solution {
         if(isPerfect(n)) return 1;
         if(dp[n]!=-1) return dp[n];
         int least=n;
-        for(int i=1;i<=n/2;i++){
-            int count=minSquare(i,dp)+minSquare(n-i,dp);
+        for(int i=1;i*i<=n;i++){
+            int count=minSquare(i*i,dp)+minSquare(n-i*i,dp);
             least=Math.min(least,count);
         }
         return dp[n]=least;
