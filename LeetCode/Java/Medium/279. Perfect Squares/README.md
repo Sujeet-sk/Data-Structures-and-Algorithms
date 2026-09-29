@@ -1,6 +1,6 @@
 # 📝 279. Perfect Squares (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/perfect-squares/)
+🔗 [Problem Link](https://leetcode.com/problems/perfect-squares)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
