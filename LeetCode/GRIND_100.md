@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 26 / 100 (26.0%)
+- **Completed:** 27 / 100 (27.0%)
 
 ---
 
@@ -98,7 +98,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [ ] Edit Distance
 - [x] [Unique Paths](./Java/Medium/62. Unique Paths/)
 - [x] [Minimum Path Sum](./Java/Medium/64. Minimum Path Sum/)
-- [ ] Target Sum
+- [x] [Target Sum](./Java/Medium/494. Target Sum/)
 - [ ] Unique Binary Search Trees
 - [ ] Best Time to Buy and Sell Stock
 - [ ] Best Time to Buy and Sell Stock with Cooldown

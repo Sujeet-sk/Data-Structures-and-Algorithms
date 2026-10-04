@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 32 / 150 (21.3%)
+- **Completed:** 33 / 150 (22.0%)
 
 ---
 
@@ -142,7 +142,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Longest Common Subsequence
 - [ ] Best Time to Buy and Sell Stock with Cooldown
 - [ ] Coin Change II
-- [ ] Target Sum
+- [x] [Target Sum](./Java/Medium/494. Target Sum/)
 - [ ] Interleaving String
 - [ ] Longest Increasing Path in a Matrix
 - [ ] Distinct Subsequences
