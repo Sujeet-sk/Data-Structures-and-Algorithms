@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 30 / 150 (20.0%)
+- **Completed:** 31 / 150 (20.7%)
 
 ---
 
@@ -135,7 +135,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Maximum Product Subarray
 - [ ] Word Break
 - [ ] Longest Increasing Subsequence
-- [ ] Partition Equal Subset Sum
+- [x] [Partition Equal Subset Sum](./Java/Medium/416. Partition Equal Subset Sum/)
 
 ### 📂 2-D Dynamic Programming
 - [x] [Unique Paths](./Java/Medium/62. Unique Paths/)
