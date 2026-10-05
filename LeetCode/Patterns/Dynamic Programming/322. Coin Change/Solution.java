@@ -8,12 +8,12 @@ class Solution {
         long pick=Integer.MAX_VALUE;
         if(A>=coins[i]) pick=1+minCoin(A-coins[i],i,coins,dp);
         long skip=minCoin(A,i+1,coins,dp);
-        return dp[i][A]=(int)Math.min(pick,skip);
+        return dp[i][A]=Math.min(pick,skip);
     }
     public int coinChange(int[] coins, int amount) {
         int n=coins.length;
         if(amount==0) return 0;
-        int[][] dp=new int[n][amount+1];
+        long[][] dp=new long[n][amount+1];
         for(int[] ele:dp) Arrays.fill(ele,-1);
         int res=(int)minCoin(amount,0,coins,dp);
         if(res==Integer.MAX_VALUE) return -1;
