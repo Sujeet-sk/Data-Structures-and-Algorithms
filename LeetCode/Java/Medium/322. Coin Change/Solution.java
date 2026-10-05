@@ -1,9 +1,7 @@
 class Solution {
     public long minCoin(int A,int i,int[] coins,long[][] dp){
-        if(i==coins.length){
-            if(A==0) return 0;
-            else return Integer.MAX_VALUE;
-        }
+        if(A==0) return 0;
+        if(i==coins.length) return Integer.MAX_VALUE;
         if(dp[i][A]!=-1) return dp[i][A];
         long pick=Integer.MAX_VALUE;
         if(A>=coins[i]) pick=1+minCoin(A-coins[i],i,coins,dp);
@@ -12,7 +10,6 @@ class Solution {
     }
     public int coinChange(int[] coins, int amount) {
         int n=coins.length;
-        if(amount==0) return 0;
         long[][] dp=new long[n][amount+1];
         for(long[] ele:dp) Arrays.fill(ele,-1);
         int res=(int)minCoin(amount,0,coins,dp);
