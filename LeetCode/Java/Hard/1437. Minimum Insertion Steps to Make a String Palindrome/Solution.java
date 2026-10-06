@@ -1,19 +1,18 @@
 class Solution {
-    public static int length(String s,String s2,int i,int j,int[][] dp){
-        if(i<0 || j<0) return 0;
-        if(dp[i][j]!=-1) return dp[i][j];
-        if(s.charAt(i)==s2.charAt(j)) return dp[i][j]=1+length(s,s2,i-1,j-1,dp);
-        else return dp[i][j]=Math.max(length(s,s2,i-1,j,dp),length(s,s2,i,j-1,dp));
-    }
-    public static int lps(String s) {
-        String s2=new StringBuilder(s).reverse().toString();
-        int[][] dp=new int[s.length()][s2.length()];
-        for(int[]ele:dp) Arrays.fill(ele,-1);
-        int i=s.length()-1;
-        int j=s2.length()-1;
-        return length(s,s2,i,j,dp);
+    public int lps(String s){
+        StringBuilder sb=new StringBuilder(s);
+        String s1=sb.reverse().toString();
+        int m=s.length(),n=s1.length();
+        int[][] dp=new int[m+1][n+1];
+        for(int i=1;i<=m;i++){
+            for(int j=1;j<=n;j++){
+                if(s.charAt(i-1)==s1.charAt(j-1)) dp[i][j]=1+dp[i-1][j-1];
+                else dp[i][j]=Math.max(dp[i][j-1],dp[i-1][j]);
+            }
+        }
+        return dp[m][n];
     }
     public int minInsertions(String s) {
-         return s.length()-lps(s);
+        return s.length()-lps(s);
     }
 }
