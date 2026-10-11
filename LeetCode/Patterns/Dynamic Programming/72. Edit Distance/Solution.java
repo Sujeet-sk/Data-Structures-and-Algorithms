@@ -4,10 +4,10 @@ class Solution {
         if(j<0) return i+1;
         if(dp[i][j]!=-1) return dp[i][j];
         if(s1.charAt(i)==s2.charAt(j)) return dp[i][j]=min(s1,s2,i-1,j-1,dp);
-        int insert=1+min(s1,s2,i,j-1,dp);
-        int delete=1+min(s1,s2,i-1,j,dp);
-        int replace=1+min(s1,s2,i-1,j-1,dp);
-        return dp[i][j]=Math.min(insert,Math.min(delete,replace));
+        int insert=min(s1,s2,i,j-1,dp);
+        int delete=min(s1,s2,i-1,j,dp);
+        int replace=min(s1,s2,i-1,j-1,dp);
+        return dp[i][j]=1+Math.min(insert,Math.min(delete,replace));
     }
     public int minDistance(String s1, String s2) {
         int m=s1.length(),n=s2.length(); 
