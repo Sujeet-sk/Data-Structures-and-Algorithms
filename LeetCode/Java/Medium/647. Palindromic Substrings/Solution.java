@@ -16,10 +16,12 @@ class Solution {
                         count++;
                     }
                 }
-                else if(s.charAt(i)==s.charAt(j)){
-                    if(dp[i+1][j-1]==1){
-                        dp[i][j]=1;
-                        count++;
+                else {
+                    if(s.charAt(i)==s.charAt(j)){
+                        if(dp[i+1][j-1]==1){
+                            dp[i][j]=1;
+                            count++;
+                        }
                     }
                 }
                 i++;
