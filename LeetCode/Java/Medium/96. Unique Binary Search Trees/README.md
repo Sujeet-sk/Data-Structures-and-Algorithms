@@ -8,8 +8,8 @@
 Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 41.5 MB
 
 ---
 
