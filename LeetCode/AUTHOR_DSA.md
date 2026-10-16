@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 4 / 238 (1.7%)
+- **Completed:** 5 / 238 (2.1%)
 
 ---
 
@@ -153,7 +153,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Maximum Subarray
 - [ ] Subarray Sums Divisible by K
 - [ ] Subsets
-- [ ] Two Sum
+- [x] [Two Sum](./Java/Easy/1. Two Sum/)
 - [ ] 3Sum
 - [ ] 4Sum
 - [ ] Subarray Sum Equals K
