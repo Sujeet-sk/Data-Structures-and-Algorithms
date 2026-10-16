@@ -1,15 +1,22 @@
 class Solution {
-    public int longest(int idx,int prev,int[] nums,int[][] dp){
-        if(idx==nums.length) return 0;
-        if(dp[idx][prev+1]!=-1) return dp[idx][prev+1];
-        int pick=0;
-        if(prev==-1 || nums[idx]>nums[prev]) pick=1+longest(idx+1,idx,nums,dp);
-        int skip=longest(idx+1,prev,nums,dp);
-        return dp[idx][prev+1]=Math.max(pick,skip);
-    }
     public int lengthOfLIS(int[] nums) {
-        int[][] dp=new int[nums.length][nums.length];
-        for(int[] ele:dp) Arrays.fill(ele,-1);
-        return longest(0,-1,nums,dp);
+        int n=nums.length;
+        int[] dp=new int[n];
+        dp[0]=1;
+        for(int i=1;i<n;i++){
+            int max=1;
+            for(int j=i-1;j>=0;j--){
+                if(nums[j]<nums[i]){
+                    int sum=1+dp[j];
+                    max=Math.max(max,sum);
+                }
+            }
+            dp[i]=max;
+        }
+        int max=0;
+        for(int ele:dp){
+            max=Math.max(max,ele);
+        }
+        return max;
     }
 }
