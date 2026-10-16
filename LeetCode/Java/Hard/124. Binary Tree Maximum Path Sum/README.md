@@ -8,8 +8,8 @@
 Dynamic Programming, Tree, Depth-First Search, Binary Tree, DP on Trees
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 1 ms
+- **Memory:** 46 MB
 
 ---
 
