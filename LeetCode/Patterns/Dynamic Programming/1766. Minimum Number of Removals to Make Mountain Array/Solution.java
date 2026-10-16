@@ -31,6 +31,7 @@ class Solution {
         }
 
         int max_sum=0;
+        
         for(int i=0;i<n;i++){
             if(dp1[i]>1 && dp2[i]>1){
                 int sum=dp1[i]+dp2[i]-1;

@@ -8,8 +8,8 @@
 Array, Binary Search, Dynamic Programming, Greedy
 
 ### 🚀 Performance
-- **Runtime:** 38 ms
-- **Memory:** 45.7 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
