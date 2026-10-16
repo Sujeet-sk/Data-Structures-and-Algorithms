@@ -3,7 +3,7 @@
 Track your progress on the Grind 75 coding interview preparation list.
 
 ## Progress
-- **Completed:** 33 / 75 (44.0%)
+- **Completed:** 34 / 75 (45.3%)
 
 ---
 
@@ -88,7 +88,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 - [ ] Maximum Depth of Binary Tree
 - [x] [Same Tree](./Java/Easy/100. Same Tree/)
 - [x] [Invert Binary Tree](./Java/Easy/226. Invert Binary Tree/)
-- [ ] Binary Tree Maximum Path Sum
+- [x] [Binary Tree Maximum Path Sum](./Java/Hard/124. Binary Tree Maximum Path Sum/)
 - [x] [Binary Tree Level Order Traversal](./Java/Medium/102. Binary Tree Level Order Traversal/)
 - [ ] Serialize and Deserialize Binary Tree
 - [ ] Subtree of Another Tree

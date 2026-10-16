@@ -3,7 +3,7 @@
 Track your progress on the Striver's SDE Sheet top interview problems.
 
 ## Progress
-- **Completed:** 37 / 76 (48.7%)
+- **Completed:** 38 / 76 (50.0%)
 
 ---
 
@@ -82,7 +82,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [x] [Lowest Common Ancestor of a Binary Tree](./Java/Medium/236. Lowest Common Ancestor of a Binary Tree/)
 - [x] [Same Tree](./Java/Easy/100. Same Tree/)
 - [x] [Binary Tree Zigzag Level Order Traversal](./Java/Medium/103. Binary Tree Zigzag Level Order Traversal/)
-- [ ] Binary Tree Maximum Path Sum
+- [x] [Binary Tree Maximum Path Sum](./Java/Hard/124. Binary Tree Maximum Path Sum/)
 - [x] [Construct Binary Tree from Preorder and Inorder Traversal](./Java/Medium/105. Construct Binary Tree from Preorder and Inorder Traversal/)
 - [x] [Symmetric Tree](./Java/Easy/101. Symmetric Tree/)
 - [x] [Validate Binary Search Tree](./Java/Medium/98. Validate Binary Search Tree/)
