@@ -32,7 +32,8 @@ class Solution {
 
         int max_sum=0;
         for(int i=0;i<n;i++){
-            int sum=dp1[i]+dp2[i]-1;
+            int sum=0;
+            if(dp1[i]>1) sum=dp1[i]+dp2[i]-1;
             max_sum=Math.max(max_sum,sum);
         }
 
