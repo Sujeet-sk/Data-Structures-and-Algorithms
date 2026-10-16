@@ -3,7 +3,7 @@
 Track your progress on the Striver's SDE Sheet top interview problems.
 
 ## Progress
-- **Completed:** 38 / 76 (50.0%)
+- **Completed:** 39 / 76 (51.3%)
 
 ---
 
@@ -94,7 +94,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [ ] Clone Graph
 - [ ] Course Schedule
 - [ ] Number of Islands
-- [ ] Longest Increasing Subsequence
+- [x] [Longest Increasing Subsequence](./Java/Medium/300. Longest Increasing Subsequence/)
 - [x] [Longest Common Subsequence](./Java/Medium/1250. Longest Common Subsequence/)
 - [ ] 01 Knapsack
 - [x] [Edit Distance](./Java/Medium/72. Edit Distance/)
