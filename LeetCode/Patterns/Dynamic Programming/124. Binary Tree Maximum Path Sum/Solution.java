@@ -3,7 +3,9 @@ class Solution {
         if(root==null) return 0;
         int leftLineSum=pathSum(root.left,max);
         int rightLineSum=pathSum(root.right,max);
-        int sum=root.val+leftLineSum+rightLineSum;
+        int sum=root.val;
+        if(leftLineSum>0) sum+=leftLineSum;
+        if(rightLineSum>0) sum+=rightLineSum;
         max[0]=Math.max(max[0],sum);
         return root.val+Math.max(0,Math.max(leftLineSum,rightLineSum));
     }
