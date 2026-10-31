@@ -13,7 +13,7 @@ class Solution {
         }
     }
     public boolean validPath(int n, int[][] edges, int source, int destination) {
-       // if(source==destination) return true;
+        if(source==destination) return true;
         List<List<Integer>>adj=new ArrayList<>();
         for(int i=0;i<n;i++){
             List<Integer>list=new ArrayList<>();
