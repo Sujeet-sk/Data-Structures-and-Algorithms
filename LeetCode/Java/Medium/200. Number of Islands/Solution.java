@@ -1,51 +1,12 @@
-class Pair{
-    int i;
-    int j;
-    Pair(int i,int j){
-        this.i=i;
-        this.j=j;
-    }
-}
-
 class Solution {
-    public void bfs(int i,int j,char[][] grid,boolean[][] visited){
+    public void dfs(int i,int j,char[][] grid,boolean[][] visited){
         int m=grid.length,n=grid[0].length;
-        Queue<Pair>q=new LinkedList<>();
-        q.add(new Pair(i,j));
         visited[i][j]=true;
-        while(!q.isEmpty()){
-            Pair front=q.remove();
-            int row=front.i;
-            int col=front.j;
-            //top
-            if(row>0){
-                if(grid[row-1][col]=='1' && !visited[row-1][col]){
-                    q.add(new Pair(row-1,col));
-                    visited[row-1][col]=true;
-                }
-            }
-            //right
-            if(col+1<n){
-                if(grid[row][col+1]=='1' && !visited[row][col+1]){
-                    q.add(new Pair(row,col+1));
-                    visited[row][col+1]=true;
-                }
-            }
-            //down
-            if(row+1<m){
-                if(grid[row+1][col]=='1' && !visited[row+1][col]){
-                    q.add(new Pair(row+1,col));
-                    visited[row+1][col]=true;
-                }
-            }
-            //left
-            if(col>0){
-                if(grid[row][col-1]=='1' && !visited[row][col-1]){
-                    q.add(new Pair(row,col-1));
-                    visited[row][col-1]=true;
-                }
-            }
-        }
+        if(i-1>=0 && grid[i-1][j]=='1' && !visited[i-1][j]) dfs(i-1,j,grid,visited);
+        if(j+1<n && grid[i][j+1]=='1' && !visited[i][j+1]) dfs(i,j+1,grid,visited);
+        if(i+1<m && grid[i+1][j]=='1' && !visited[i+1][j]) dfs(i+1,j,grid,visited);
+        if(j-1>=0 && grid[i][j-1]=='1' && !visited[i][j-1]) dfs(i,j-1,grid,visited);
+        
     }
     public int numIslands(char[][] grid) {
         int m=grid.length,n=grid[0].length;
@@ -54,7 +15,7 @@ class Solution {
         for(int i=0;i<m;i++){
             for(int j=0;j<n;j++){
                 if(grid[i][j]=='1' && !visited[i][j]){
-                    bfs(i,j,grid,visited);
+                    dfs(i,j,grid,visited);
                     count++;
                 }
             }
