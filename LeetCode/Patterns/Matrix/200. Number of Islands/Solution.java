@@ -17,7 +17,13 @@ class Solution {
             Pair front=q.remove();
             int row=front.i;
             int col=front.j;
-            
+            //top
+            if(row>0){
+                if(grid[row-1][col]=='1' && !visited[row-1][col]){
+                    q.add(new Pair(row-1,col));
+                    visited[row-1][col]=true;
+                }
+            }
             //right
             if(col+1<n){
                 if(grid[row][col+1]=='1' && !visited[row][col+1]){
@@ -30,6 +36,13 @@ class Solution {
                 if(grid[row+1][col]=='1' && !visited[row+1][col]){
                     q.add(new Pair(row+1,col));
                     visited[row+1][col]=true;
+                }
+            }
+            //left
+            if(col>0){
+                if(grid[row][col-1]=='1' && !visited[row][col-1]){
+                    q.add(new Pair(row,col-1));
+                    visited[row][col-1]=true;
                 }
             }
         }
