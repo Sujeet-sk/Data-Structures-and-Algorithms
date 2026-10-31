@@ -17,6 +17,7 @@ class Solution {
             Pair front=q.remove();
             int row=front.i;
             int col=front.j;
+            
             //right
             if(col+1<n){
                 if(grid[row][col+1]=='1' && !visited[row][col+1]){
