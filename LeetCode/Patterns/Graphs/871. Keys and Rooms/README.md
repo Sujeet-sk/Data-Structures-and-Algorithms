@@ -9,7 +9,7 @@ Depth-First Search, Breadth-First Search, Graph Theory
 
 ### 🚀 Performance
 - **Runtime:** 2 ms
-- **Memory:** 45.9 MB
+- **Memory:** 45.7 MB
 
 ---
 
