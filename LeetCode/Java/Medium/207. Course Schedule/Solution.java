@@ -24,7 +24,6 @@ class Solution {
             }
         }
 
-        if(ans.size()!=numCourses) return false;
-        return true;
+        return ans.size()==numCourses;
     }
 }
