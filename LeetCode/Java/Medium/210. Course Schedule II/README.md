@@ -1,6 +1,6 @@
 # 📝 210. Course Schedule II (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/course-schedule-ii)
+🔗 [Problem Link](https://leetcode.com/problems/course-schedule-ii/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 

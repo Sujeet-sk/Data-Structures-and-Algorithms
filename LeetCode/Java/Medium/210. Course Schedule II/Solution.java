@@ -25,7 +25,7 @@ class Solution {
             }
         }
 
-        if(ans.length!=numCourses) return new int[0];
+        if(idx!=numCourses) return new int[0];
         return ans;
 
 
