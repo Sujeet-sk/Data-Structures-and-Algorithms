@@ -1,19 +1,18 @@
 class Solution {
-    static boolean ans;
-    public void dfs(int i,ArrayList<ArrayList<Integer>>al,boolean[] visited,boolean[] path){
+    public boolean dfs(int i,ArrayList<ArrayList<Integer>>al,boolean[] visited,boolean[] path){
         visited[i]=true;
         path[i]=true;
         for(int ele:al.get(i)){
-            if(path[ele]==true){
-                ans=false;
-                return;
+            if(path[ele]==true) return false;
+            if(!visited[ele]){
+                if(!dfs(ele,al,visited,path)) return false;
             }
-            if(!visited[ele]) dfs(ele,al,visited,path);
         }
         path[i]=false;
+
+        return true;
     }
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        ans=true;
         ArrayList<ArrayList<Integer>>al=new ArrayList<>();
         for(int i=0;i<numCourses;i++) al.add(new ArrayList<>());
         for(int i=0;i<prerequisites.length;i++){
@@ -23,9 +22,10 @@ class Solution {
         boolean[] visited=new boolean[numCourses];
         boolean[] path=new boolean[numCourses];
         for(int i=0;i<numCourses;i++){
-            if(!visited[i]) dfs(i,al,visited,path);
+            if(!visited[i]){
+                if(!dfs(i,al,visited,path)) return false;
+            }
         }
-        
-        return ans;
+        return true;
     }
 }
