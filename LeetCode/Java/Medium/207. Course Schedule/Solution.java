@@ -23,8 +23,9 @@ class Solution {
         boolean[] visited=new boolean[numCourses];
         boolean[] path=new boolean[numCourses];
         for(int i=0;i<numCourses;i++){
-            dfs(i,al,visited,path);
+            if(!visited[i]) dfs(i,al,visited,path);
         }
+        
         return ans;
     }
 }
