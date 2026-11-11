@@ -23,6 +23,7 @@ class Solution {
         while(pq.size()>0){
             Pair front=pq.remove();
             int node=front.node;
+            if(ans[node]>front.prob) continue;
             for(Pair p:adj.get(node)){
                 double tProb=front.prob*p.prob;
                 if(tProb>ans[p.node]){
