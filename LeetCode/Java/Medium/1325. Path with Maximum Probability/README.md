@@ -9,7 +9,7 @@ Array, Graph Theory, Heap (Priority Queue), Shortest Path, Dijkstra's Algorithm
 
 ### 🚀 Performance
 - **Runtime:** 36 ms
-- **Memory:** 68.8 MB
+- **Memory:** 68.7 MB
 
 ---
 
