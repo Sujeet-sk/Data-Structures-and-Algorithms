@@ -9,7 +9,7 @@ Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix
 
 ### 🚀 Performance
 - **Runtime:** 3 ms
-- **Memory:** 52.1 MB
+- **Memory:** 51.5 MB
 
 ---
 
