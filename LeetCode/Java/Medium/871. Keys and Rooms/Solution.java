@@ -13,6 +13,7 @@ class Solution {
         for(boolean ele:visited){
             if(ele==false) return false;
         }
+        
         return true;
     }
 }
